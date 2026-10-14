@@ -10,8 +10,8 @@ def font(sz):
 BG=(11,16,32); INK=(241,245,249); MUTED=(148,163,184); AMBER=(251,191,36); GREEN=(34,197,94); PANEL=(20,26,46); LINE=(38,48,82)
 W,H=1200,630
 img=Image.new('RGB',(W,H),BG); d=ImageDraw.Draw(img)
-d.text((70,110),'PIPPO POPPI',font=font(112),fill=INK)
-d.text((70,222),'GAMES',font=font(112),fill=AMBER)
+d.text((70,120),'PIPPO POPPI',font=font(88),fill=INK)
+d.text((70,222),'GAMES',font=font(104),fill=AMBER)
 d.text((72,360),'Otto giochi gratis nel browser.',font=font(34),fill=MUTED)
 d.text((72,404),'Niente da installare: tocca e gioca.',font=font(34),fill=MUTED)
 names=['Math Survival','Coccodrillo vs Piccione','Racism 2','Slotcars Simulator','Void Vanguard','Steel Command','Crowd Cannon','Crowd Cannon: Lanes']
