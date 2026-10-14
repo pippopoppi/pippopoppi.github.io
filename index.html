@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pippo Poppi Games</title>
+<meta name="description" content="Tutti i giochi di Pippo Poppi Games: gratis, nel browser, senza installare nulla. Corse slot car, sparatutto, strategia, calcolo mentale e un coccodrillo a Roma.">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:title" content="Pippo Poppi Games">
+<meta property="og:description" content="Otto giochi gratis nel browser, zero installazioni. Scegli e gioca.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pippopoppi.github.io/">
+<meta property="og:image" content="https://pippopoppi.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pippopoppi.github.io/og.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+  :root { --bg: #0b1020; --panel: #141a2e; --panel2: #1a2240; --ink: #f1f5f9; --muted: #94a3b8; --line: #263052; --green: #22c55e; --amber: #fbbf24; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-text-size-adjust: 100%; }
+  body { padding: calc(env(safe-area-inset-top, 0px) + 28px) 16px calc(env(safe-area-inset-bottom, 0px) + 32px); }
+  main { max-width: 900px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 26px; }
+  h1 { margin: 0; font-size: clamp(30px, 7vw, 46px); font-weight: 900; letter-spacing: 0.02em; line-height: 1.05; }
+  h1 span { color: var(--amber); }
+  .sub { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .card { display: flex; flex-direction: column; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; text-decoration: none; color: inherit; transition: transform 120ms ease, background 120ms ease, border-color 120ms ease; }
+  .card:hover, .card:focus-visible { transform: translateY(-2px); background: var(--panel2); border-color: #3b4a7a; outline: none; }
+  .card:active { transform: translateY(0); }
+  .top { display: flex; align-items: center; gap: 12px; }
+  .icon { width: 56px; height: 56px; border-radius: 14px; flex: 0 0 56px; background: #0f172a; object-fit: cover; }
+  .title { font-size: 19px; font-weight: 800; line-height: 1.15; }
+  .genre { display: block; margin-top: 3px; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); font-weight: 700; text-transform: uppercase; }
+  .desc { margin: 0; color: #cbd5e1; font-size: 14px; line-height: 1.5; flex: 1 1 auto; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); min-height: 18px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(34, 197, 94, 0.14); color: #86efac; font-weight: 700; font-size: 11px; letter-spacing: 0.04em; }
+  .badge.rank { background: rgba(251, 191, 36, 0.14); color: #fde68a; }
+  .play { margin-top: 2px; align-self: flex-start; background: var(--green); color: #052e16; font-weight: 800; letter-spacing: 0.06em; padding: 10px 18px; border-radius: 12px; font-size: 14px; }
+  footer { text-align: center; margin-top: 36px; color: var(--muted); font-size: 12px; letter-spacing: 0.08em; }
+  footer a { color: inherit; }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>PIPPO POPPI <span>GAMES</span></h1>
+    <p class="sub">Otto giochi gratis nel browser. Niente da installare: tocca e gioca.</p>
+  </header>
+
+  <div class="grid" id="grid">
+
+    <a class="card" href="/math-survival/" data-game="math-survival" data-rank="1">
+      <div class="top"><img class="icon" src="/math-survival/icon.svg" alt="" loading="lazy"><div><div class="title">Math Survival</div><span class="genre">Calcolo mentale</span></div></div>
+      <p class="desc">30 secondi sul cronometro: ogni risposta giusta regala tempo, ogni salto lo toglie. Una partita, un punteggio, ancora una.</p>
+      <div class="meta"><span class="badge rank">Classifica mondiale</span><span class="count"></span><span class="first"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/croc-vs-pigeon/" data-game="croc-vs-pigeon" data-rank="1">
+      <div class="top"><img class="icon" src="/croc-vs-pigeon/icon.svg" alt="" loading="lazy"><div><div class="title">Coccodrillo vs Piccione</div><span class="genre">Arcade a un tasto</span></div></div>
+      <p class="desc">Un coccodrillo gigante nel centro di Roma contro un esercito di piccioni arroganti. Tieni premuto, rilascia, mordi, schiva. Zero dignità.</p>
+      <div class="meta"><span class="badge rank">Classifica mondiale</span><span class="count"></span><span class="first"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/racism2/" data-game="racism2">
+      <div class="top"><img class="icon" src="/racism2/icon.svg" alt="" loading="lazy"><div><div class="title">Racism 2 — Super Slot Racing</div><span class="genre">Corse slot car</span></div></div>
+      <p class="desc">Cinque circuiti, turbo, motore da supercar e avversari IA. Solo gas: rilascia prima delle curve o deragli. Da 1 a 4 piloti sullo stesso schermo.</p>
+      <div class="meta"><span class="badge">Multiplayer locale</span><span class="badge">Editor circuiti</span><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/Racism/" data-game="Racism">
+      <div class="top"><img class="icon" src="/Racism/icons/icon.svg" alt="" loading="lazy"><div><div class="title">Slotcars Simulator</div><span class="genre">Corse slot car · V1</span></div></div>
+      <p class="desc">Il primo simulatore: piste personalizzate con l'editor, fisica credibile, time attack e sfide fino a quattro amici in locale.</p>
+      <div class="meta"><span class="badge">Multiplayer locale</span><span class="badge">Editor circuiti</span><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/void-vanguard/" data-game="void-vanguard">
+      <div class="top"><img class="icon" src="/void-vanguard/icon.svg" alt="" loading="lazy"><div><div class="title">Void Vanguard</div><span class="genre">Sparatutto spaziale</span></div></div>
+      <p class="desc">Trascina per volare, la nave spara da sola. Ondate aliene, power-up, potenziamenti in hangar e il boss Dreadnought.</p>
+      <div class="meta"><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/steel-command/" data-game="steel-command">
+      <div class="top"><img class="icon" src="/steel-command/icon.svg" alt="" loading="lazy"><div><div class="title">Steel Command</div><span class="genre">Strategia in tempo reale</span></div></div>
+      <p class="desc">Costruisci la base, raccogli rifornimenti, addestra carri e fanteria, scegli il tuo Generale e schiaccia il comandante nemico.</p>
+      <div class="meta"><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/crowd-cannon/" data-game="crowd-cannon">
+      <div class="top"><img class="icon" src="/crowd-cannon/icon.svg" alt="" loading="lazy"><div><div class="title">Crowd Cannon</div><span class="genre">Azione e strategia</span></div></div>
+      <p class="desc">Lancia soldatini, moltiplicali attraverso i cancelli ×3 e travolgi le basi nemiche a ondate.</p>
+      <div class="meta"><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+    <a class="card" href="/crowd-cannon-lanes/" data-game="crowd-cannon-lanes">
+      <div class="top"><img class="icon" src="/crowd-cannon-lanes/icon.svg" alt="" loading="lazy"><div><div class="title">Crowd Cannon: Lanes</div><span class="genre">Azione e strategia</span></div></div>
+      <p class="desc">La variante a corsie: combatti al centro, prendi le carte moltiplicatore e apri le casse premio nelle altre per sbloccare armi e soldati.</p>
+      <div class="meta"><span class="count"></span></div>
+      <span class="play">GIOCA</span>
+    </a>
+
+  </div>
+
+  <footer>Pippo Poppi Games · tutto gratis, senza server · <a href="https://github.com/pippopoppi">GitHub</a></footer>
+</main>
+
+<script>
+(function () {
+  if (!window.fetch) return;
+  var cards = document.querySelectorAll('.card[data-game]');
+  cards.forEach(function (card) {
+    var game = card.dataset.game;
+    // Play count from GoatCounter (public counter endpoint; silently skipped if unavailable).
+    fetch('https://pippopoppi.goatcounter.com/counter//' + game + '/.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        var c = d && String(d.count || '');
+        if (!c || c === '0') return;
+        card.querySelector('.count').textContent = c === '1' ? 'Giocato 1 volta' : 'Giocato ' + c + ' volte';
+      }).catch(function () {});
+    // World #1 for ranked games.
+    if (card.dataset.rank) {
+      fetch('https://ranking.pippopoppi.workers.dev/' + game + '?top=1')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+          var t = d && d.top && d.top[0];
+          if (!t) return;
+          card.querySelector('.first').textContent = '#1 ' + t.name + ' · ' + Number(t.score).toLocaleString('it-IT');
+        }).catch(function () {});
+    }
+  });
+})();
+</script>
+<!-- Visitor count (GoatCounter: no cookies, no personal data) -->
+<script data-goatcounter="https://pippopoppi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
