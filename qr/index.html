@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Codici QR · Pippo Poppi Games</title>
+<meta name="description" content="Un codice QR per ogni gioco di Pippo Poppi Games: inquadra con il telefono e gioca subito nel browser.">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:title" content="Codici QR · Pippo Poppi Games">
+<meta property="og:description" content="Inquadra e gioca: un codice QR per ogni gioco.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pippopoppi.github.io/qr/">
+<meta property="og:image" content="https://pippopoppi.github.io/qr/all-games-sheet.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pippopoppi.github.io/qr/all-games-sheet.png">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<style>
+  :root { --bg: #0b1020; --panel: #141a2e; --panel2: #1a2240; --ink: #f1f5f9; --muted: #94a3b8; --line: #263052; --green: #22c55e; --amber: #fbbf24; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-text-size-adjust: 100%; }
+  body { padding: calc(env(safe-area-inset-top, 0px) + 28px) 16px calc(env(safe-area-inset-bottom, 0px) + 32px); }
+  main { max-width: 900px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 26px; }
+  h1 { margin: 0; font-size: clamp(30px, 7vw, 46px); font-weight: 900; letter-spacing: 0.02em; line-height: 1.05; }
+  h1 span { color: var(--amber); }
+  .sub { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+  .back { display: inline-block; margin-top: 14px; color: var(--muted); font-size: 13px; }
+  .back:hover { color: var(--ink); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .card { display: flex; flex-direction: column; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+  .title { font-size: 19px; font-weight: 800; line-height: 1.15; }
+  .qr { display: block; width: 100%; aspect-ratio: 1; border-radius: 12px; background: #fff; }
+  .url { font-size: 12px; color: var(--amber); word-break: break-all; text-decoration: none; }
+  .url:hover { text-decoration: underline; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+  .links a { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; padding: 6px 12px; border-radius: 999px; background: var(--panel2); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  .links a:hover { border-color: #3b4a7a; }
+  .links a.play { background: var(--green); color: #052e16; border-color: transparent; }
+  .sheet { margin-top: 28px; text-align: center; }
+  .sheet a { color: var(--amber); }
+  footer { text-align: center; margin-top: 36px; color: var(--muted); font-size: 12px; letter-spacing: 0.08em; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>CODICI <span>QR</span></h1>
+    <p class="sub">Inquadra con la fotocamera del telefono e gioca subito. Nessuna installazione.</p>
+    <a class="back" href="/">← Tutti i giochi</a>
+  </header>
+
+  <div class="grid">
+    <div class="card"><div class="title">Pippo Poppi Games</div><img class="qr" src="home-qr.png" alt="QR della home page"><a class="url" href="/">pippopoppi.github.io</a><div class="links"><a class="play" href="/">APRI</a><a href="home-card.png">Card</a><a href="home-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Math Survival</div><img class="qr" src="math-survival-qr.png" alt="QR di Math Survival"><a class="url" href="/math-survival/">pippopoppi.github.io/math-survival/</a><div class="links"><a class="play" href="/math-survival/">GIOCA</a><a href="math-survival-card.png">Card</a><a href="math-survival-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Coccodrillo vs Piccione</div><img class="qr" src="croc-vs-pigeon-qr.png" alt="QR di Coccodrillo vs Piccione"><a class="url" href="/croc-vs-pigeon/">pippopoppi.github.io/croc-vs-pigeon/</a><div class="links"><a class="play" href="/croc-vs-pigeon/">GIOCA</a><a href="croc-vs-pigeon-card.png">Card</a><a href="croc-vs-pigeon-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Racism 2</div><img class="qr" src="racism2-qr.png" alt="QR di Racism 2"><a class="url" href="/racism2/">pippopoppi.github.io/racism2/</a><div class="links"><a class="play" href="/racism2/">GIOCA</a><a href="racism2-card.png">Card</a><a href="racism2-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Slotcars Simulator</div><img class="qr" src="Racism-qr.png" alt="QR di Slotcars Simulator"><a class="url" href="/Racism/">pippopoppi.github.io/Racism/</a><div class="links"><a class="play" href="/Racism/">GIOCA</a><a href="Racism-card.png">Card</a><a href="Racism-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Void Vanguard</div><img class="qr" src="void-vanguard-qr.png" alt="QR di Void Vanguard"><a class="url" href="/void-vanguard/">pippopoppi.github.io/void-vanguard/</a><div class="links"><a class="play" href="/void-vanguard/">GIOCA</a><a href="void-vanguard-card.png">Card</a><a href="void-vanguard-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Steel Command</div><img class="qr" src="steel-command-qr.png" alt="QR di Steel Command"><a class="url" href="/steel-command/">pippopoppi.github.io/steel-command/</a><div class="links"><a class="play" href="/steel-command/">GIOCA</a><a href="steel-command-card.png">Card</a><a href="steel-command-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Crowd Cannon</div><img class="qr" src="crowd-cannon-qr.png" alt="QR di Crowd Cannon"><a class="url" href="/crowd-cannon/">pippopoppi.github.io/crowd-cannon/</a><div class="links"><a class="play" href="/crowd-cannon/">GIOCA</a><a href="crowd-cannon-card.png">Card</a><a href="crowd-cannon-qr.svg">SVG</a></div></div>
+    <div class="card"><div class="title">Crowd Cannon: Lanes</div><img class="qr" src="crowd-cannon-lanes-qr.png" alt="QR di Crowd Cannon: Lanes"><a class="url" href="/crowd-cannon-lanes/">pippopoppi.github.io/crowd-cannon-lanes/</a><div class="links"><a class="play" href="/crowd-cannon-lanes/">GIOCA</a><a href="crowd-cannon-lanes-card.png">Card</a><a href="crowd-cannon-lanes-qr.svg">SVG</a></div></div>
+  </div>
+
+  <p class="sheet"><a href="all-games-sheet.png">Scarica il foglio con tutti i codici</a> (PNG, pronto da stampare)</p>
+
+  <footer>Pippo Poppi Games · tutto gratis, senza server · <a href="/">Home</a> · <a href="https://github.com/pippopoppi">GitHub</a></footer>
+</main>
+</body>
+</html>
